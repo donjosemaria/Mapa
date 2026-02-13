@@ -435,13 +435,7 @@ areas.forEach(area => {
         <div class="card-badge">Case Study ${num}</div>
       </div>
       <div class="card-content">
-        <h3 class="card-title">${title}</h3>
-        <a href="${url}" target="_blank" class="card-action">
-          Read full case study
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
+        <h3 class="card-title">${title}</h3>       
       </div>
     `;
 
@@ -454,6 +448,10 @@ areas.forEach(area => {
     }, 150);
   });
 });
+
+.card-content {
+  padding-bottom: 1rem;
+}
 
 // Mantener visible si el mouse está sobre el card
 card.addEventListener("mouseenter", () => {
