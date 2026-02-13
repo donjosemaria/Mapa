@@ -428,22 +428,16 @@ areas.forEach(area => {
     const title = area.dataset.title;
     const img = area.dataset.img;
     const url = area.getAttribute('href');
-
-    card.innerHTML = `
-      <div class="card-image-wrapper">
-        <img src="${img}" alt="">
-        <div class="card-badge">Case Study ${num}</div>
-      </div>
-      <div class="card-content">
-        <h3 class="card-title">${title}</h3>
-        <a href="${url}" target="_blank" class="card-action">
-          Read full case study
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
-    `;
+   
+card.innerHTML = `
+  <div class="card-image-wrapper">
+    <img src="${img}" alt="">
+    <div class="card-badge">Case Study ${num}</div>
+  </div>
+  <div class="card-content">
+    <h3 class="card-title">${title}</h3>
+  </div>
+`;
 
     card.classList.add("visible");
   });
